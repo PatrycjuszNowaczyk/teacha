@@ -6,15 +6,15 @@ import {useEffect, useState} from "react";
 export default function Home() {
   const [data, setData] = useState(null);
 
-  useEffect(() => {
-    fetch('http://api.localhost/hello/world')
-        .then(response => response.json())
-        .then(data => {
-          setTimeout(() => {
-            setData(data.body)
-          }, 3000);
-        });
-  }, []);
+  // useEffect(() => {
+  //   fetch('http://api.localhost/hello/world')
+  //       .then(response => response.json())
+  //       .then(data => {
+  //         setTimeout(() => {
+  //           setData(data.body)
+  //         }, 3000);
+  //       });
+  // }, []);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
