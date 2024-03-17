@@ -1,0 +1,3 @@
+#ignore major ide editor projects folders
+.idea
+.vscode
